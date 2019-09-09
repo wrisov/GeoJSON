@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
   con.connect((err) => {
     console.log('error is', err);
     console.log('connected');
-  })
+  });
   res.render('index', { title: 'Express' });
 });
 

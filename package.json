@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "devstart": "nodemon ./bin/www"
+    "devstart": "nodemon --max-old-space-size=4096 ./bin/www"
   },
   "dependencies": {
+    "@turf/turf": "^5.1.6",
     "async": "^3.0.1",
     "cookie-parser": "~1.4.3",
     "cors": "^2.8.5",
@@ -19,6 +20,7 @@
     "lodash.set": "^4.3.2",
     "mongoose": "^5.6.0",
     "morgan": "~1.9.0",
+    "multer": "^1.4.2",
     "mysql": "^2.17.1",
     "nodemon": "^1.19.1"
   }
